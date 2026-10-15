@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nigel Cao</title>
+    <meta name="description" content="Nigel Cao: Finance at Gies, researcher, founder and skier. Scroll to ski the run." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛷️</text></svg>" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- The ski run. Decorative, so screen readers get the status line instead. -->
+    <aside class="slope" aria-hidden="true">
+      <svg class="slope__svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polyline class="slope__trail" points="" />
+        <polyline class="slope__tracks" points="" />
+      </svg>
+      <div class="slope__gates"></div>
+      <div class="skier"><span class="skier__body">⛷️</span></div>
+    </aside>
+
+    <div class="hud" role="status" aria-live="polite">
+      <span class="hud__alt"><span data-altitude>5,420</span> ft</span>
+      <span class="hud__gates">Gates <span data-gates>0</span>/<span data-gates-total>4</span></span>
+    </div>
+
+    <header class="hero" id="top" tabindex="-1">
+      <svg class="hero__mountains" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <path class="m3" d="M0 300 L180 170 L320 260 L520 90 L700 230 L860 130 L1040 250 L1220 120 L1440 240 V420 H0Z" />
+        <path class="m2" d="M0 340 L220 230 L380 300 L600 160 L780 290 L980 200 L1180 300 L1440 210 V420 H0Z" />
+        <path class="m1" d="M0 380 L260 300 L520 360 L760 280 L1000 360 L1240 300 L1440 350 V420 H0Z" />
+      </svg>
+      <div class="hero__inner">
+        <p class="eyebrow">Alpental, WA · Summit 5,420 ft</p>
+        <h1>Nigel<br />Cao</h1>
+        <p class="hero__lede">
+          Finance student at Gies College of Business. Researcher, founder and Alpental skier.
+        </p>
+        <a class="btn btn--light" href="#about">Drop in <span aria-hidden="true">↓</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="about" data-gate="1" aria-labelledby="about-h">
+        <p class="gate-label">Gate 1</p>
+        <h2 id="about-h">About me</h2>
+        <div class="about">
+          <p class="about__big">
+            I like problems where numbers meet people: how boards shape company returns, how a small team pitches a
+            product, how a book drive turns into a library.
+          </p>
+          <div class="about__cards">
+            <div class="stat">
+              <span class="stat__num">UIUC</span>
+              <span class="stat__label">Gies College of Business, intended Finance major · 2026 –</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">3.96</span>
+              <span class="stat__label">Unweighted GPA, Eastlake High School</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">2</span>
+              <span class="stat__label">Research papers, one published</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">1,000+</span>
+              <span class="stat__label">Books donated through a nonprofit I co-founded</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="trails" data-gate="2" aria-labelledby="trails-h">
+        <p class="gate-label">Gate 2</p>
+        <h2 id="trails-h">Trail map</h2>
+        <p class="section__intro">
+          Everything I've worked on, rated like ski runs: how hard it was for me. Filter by trail or search.
+        </p>
+
+        <div class="filters">
+          <div class="chips" role="group" aria-label="Filter runs by category"></div>
+          <div class="search">
+            <label for="run-search" class="visually-hidden">Search runs</label>
+            <input id="run-search" type="search" placeholder="Search runs, e.g. finance" autocomplete="off" />
+            <button type="button" class="btn btn--ghost" data-reset>Reset map</button>
+          </div>
+        </div>
+        <p class="result-count" aria-live="polite" data-result-count></p>
+        <div class="runs" data-runs></div>
+      </section>
+
+      <section class="section" id="podium" data-gate="3" aria-labelledby="podium-h">
+        <p class="gate-label">Gate 3</p>
+        <h2 id="podium-h">Podium</h2>
+        <ol class="podium">
+          <li>
+            <span class="podium__place">1st</span>
+            <div>
+              <h3>American Computer Science League, Washington State</h3>
+              <p>First place in the state, 2024–25.</p>
+            </div>
+          </li>
+          <li>
+            <span class="podium__place">★</span>
+            <div>
+              <h3>Certificate of Special Congressional Recognition</h3>
+              <p>For community service and academic achievement, Dec. 2025.</p>
+            </div>
+          </li>
+          <li>
+            <span class="podium__place">AP</span>
+            <div>
+              <h3>AP Scholar with Distinction</h3>
+              <p>Eight AP exams, including 5s in Computer Science A and World History.</p>
+            </div>
+          </li>
+          <li>
+            <span class="podium__place">♪</span>
+            <div>
+              <h3>Pianist, ABRSM Level 8</h3>
+              <p>Ten years of classical piano, which is where the music festival started.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section lodge" id="lodge" data-gate="4" aria-labelledby="lodge-h">
+        <p class="gate-label">Gate 4 · Base lodge, 3,140 ft</p>
+        <h2 id="lodge-h">Let's talk</h2>
+        <p class="section__intro">Want to talk research, a startup idea or the best line down International? Reach out.</p>
+        <ul class="contact">
+          <li><a class="btn btn--accent" href="mailto:caojialin07@gmail.com">caojialin07@gmail.com</a></li>
+          <li><a class="btn btn--ghost" href="https://www.linkedin.com/in/nigelcao" rel="noopener">LinkedIn</a></li>
+          <li><a class="btn btn--ghost" href="https://github.com/jialincao07" rel="noopener">GitHub</a></li>
+        </ul>
+        <div class="finish" data-finish hidden>
+          <p class="finish__title">🏁 Run complete!</p>
+          <p>You cleared every gate from the summit to the lodge.</p>
+          <button type="button" class="btn btn--accent" data-summit>Back to the summit ↑</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built by Nigel Cao for the NOBE capstone · <a href="https://github.com/jialincao07/nigel-cao-site">Source on GitHub</a></p>
+    </footer>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>

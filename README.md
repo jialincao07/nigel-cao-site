@@ -68,8 +68,9 @@ Nothing deploys unless the tests pass, because `deploy` depends on `verify` (`ne
 
 ### Evidence
 
-- Failed check, then the fix: _see PR link below_
-- Main deployment: _see Actions run link below_
+- **Failed check:** the first run on `main` failed because GitHub's Node 22 didn't accept `node --test tests/`. [Failed run](https://github.com/jialincao07/nigel-cao-site/actions/runs/38810732506)
+- **Corrected passing run:** fixed in [PR #1](https://github.com/jialincao07/nigel-cao-site/pull/1), where `verify` passed before merging. [Passing run](https://github.com/jialincao07/nigel-cao-site/actions/runs/38810818119)
+- **Main deployment:** after the merge, `verify` and `deploy` both passed and the site went live. [Deploy run](https://github.com/jialincao07/nigel-cao-site/actions/runs/38810861093)
 
 ## AI use and limitations
 

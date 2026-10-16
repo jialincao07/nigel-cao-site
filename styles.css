@@ -341,47 +341,6 @@ main {
   font-weight: 500;
   line-height: 1.25;
 }
-.about__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-@media (min-width: 1200px) {
-  .about__cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (max-width: 520px) {
-  .about__cards {
-    grid-template-columns: 1fr;
-  }
-}
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 24px;
-  background: var(--snow);
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-}
-.stat__num {
-  font-family: var(--display);
-  font-size: 44px;
-  font-weight: 800;
-  color: var(--deep);
-  line-height: 1;
-}
-.stat__title {
-  font-family: var(--display);
-  font-size: 22px;
-  font-weight: 800;
-  margin-top: 6px;
-}
-.stat__label {
-  color: var(--muted);
-  font-size: 15px;
-}
 
 /* Trail map */
 .filters {

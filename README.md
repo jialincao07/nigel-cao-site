@@ -74,7 +74,7 @@ Nothing deploys unless the tests pass, because `deploy` depends on `verify` (`ne
 
 ## AI use and limitations
 
-I built this with help from Claude (Anthropic's AI coding assistant). Claude generated the first version of the code, tests, workflow and this README from my resume, my answers about design and content, and the capstone requirements. I chose the skiing/Alpental theme, the content and the style. I reviewed the code and can explain how each part works.
+I built this with help from Claude. Claude generated the first version of the code, tests, workflow and this README from my resume, my answers about design and content, and the capstone requirements. I chose the skiing/Alpental theme, the content and the style.
 
 **Limitations:**
 
